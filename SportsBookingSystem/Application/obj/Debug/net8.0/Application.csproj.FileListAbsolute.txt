@@ -1,0 +1,12 @@
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\bin\Debug\net8.0\Application.deps.json
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\bin\Debug\net8.0\Application.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\bin\Debug\net8.0\Application.pdb
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.sourcelink.json
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\refint\Application.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\Application.pdb
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Application\obj\Debug\net8.0\ref\Application.dll

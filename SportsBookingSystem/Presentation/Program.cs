@@ -1,3 +1,7 @@
+using Data;
+using Microsoft.EntityFrameworkCore;
+using SportsBookingSystem.Extentions;
+
 namespace SportsBookingSystem;
 
 public class Program
@@ -9,6 +13,13 @@ public class Program
         // Add services to the container.
         builder.Services.AddControllersWithViews();
 
+        builder
+            .AddDbContext()
+            .AddRepositories()
+            .AddOptions()
+            .AddJwtBearer();
+        
+            
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -28,7 +39,7 @@ public class Program
 
         app.MapControllerRoute(
             name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
+            pattern: "{controller=Account}/{action=Authorization}/{id?}");
 
         app.Run();
     }
