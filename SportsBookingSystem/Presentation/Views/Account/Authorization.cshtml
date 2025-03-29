@@ -15,20 +15,23 @@
 <body class="d-flex justify-content-center align-items-center vh-100 bg-light">
 <div class="card p-4 shadow-lg" style="width: 350px;">
     <h2 class="text-center mb-3">Log In</h2>
-    <form asp-controller="Account" asp-action="LogIn" method="post">
+    @using (Html.BeginForm("Authorization", "Account", FormMethod.Post, new { @class = "needs-validation" }))
+    {
         <div class="mb-3">
             @Html.LabelFor(model => model.Email, new { @class = "form-label" })
             @Html.TextBoxFor(model => model.Email, new { @class = "form-control", required = "required" })
+            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
         </div>
         <div class="mb-3">
             @Html.LabelFor(model => model.Password, new { @class = "form-label" })
             @Html.PasswordFor(model => model.Password, new { @class = "form-control", required = "required" })
+            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
         </div>
         <div class="d-grid gap-2">
             <button type="submit" class="btn btn-primary">Log In</button>
             <a href="@Url.Action("Registration", "Account")" class="btn btn-outline-secondary">Register</a>
         </div>
-    </form>
+    }
 </div>
 </body>
 </html>

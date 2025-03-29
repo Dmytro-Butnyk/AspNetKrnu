@@ -62,3 +62,13 @@ D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation
 D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\obj\Debug\net8.0\ref\Presentation.dll
 D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Application.dll
 D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Application.pdb
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\MediatR.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\ForProgramming\Education\КрНУ\AspNetKrnu\SportsBookingSystem\Presentation\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

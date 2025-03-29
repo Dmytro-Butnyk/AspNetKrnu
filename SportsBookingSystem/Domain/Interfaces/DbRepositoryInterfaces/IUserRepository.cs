@@ -5,5 +5,5 @@ namespace Domain.Interfaces.DbRepositoryInterfaces;
 
 public interface IUserRepository : IRepository<User>
 {
-        
+    Task<User?> GetUserByEmail (string email, CancellationToken ct);
 }

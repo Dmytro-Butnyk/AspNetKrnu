@@ -11,6 +11,9 @@ public class RegisterCommand : IRequest<Unit>
     
     [Required]
     [MinLength(6)]
+    [MaxLength(50)]
+    [RegularExpression(@"^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$", 
+        ErrorMessage = "Password must contain at least 1 uppercase letter, 1 number, and 1 special character")]
     [DataType(DataType.Password)]
     public string Password { get; set; }
     

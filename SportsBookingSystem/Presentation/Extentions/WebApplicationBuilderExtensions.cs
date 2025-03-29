@@ -1,16 +1,35 @@
+using System.Reflection;
+using Application.Contracts.Identity;
+using Application.Handlers.Account;
 using Application.Options;
+using Application.Services.Identity;
 using Data;
 using Data.Repositories;
 using Data.Repositories.Shared;
 using Domain.Interfaces.DbRepositoryInterfaces;
 using Domain.Interfaces.DbRepositoryInterfaces.Shared;
+using Domain.Models.DbModels;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace SportsBookingSystem.Extentions;
 
 public static class WebApplicationBuilderExtensions
 {
+    public static WebApplicationBuilder AddApplicationServices(this WebApplicationBuilder builder)
+    {
+        builder.Services.AddScoped<IAccountService, AccountService>();
+        builder.Services.AddScoped<IJwtBearerService, JwtBearerService>();
+        
+        builder.Services.AddHttpContextAccessor();
+        builder.Services.AddTransient<IPasswordHasher<User>, PasswordHasher<User>>();
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(LogInQueryHandler).Assembly));
+        builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(RegisterCommandHandler).Assembly));
+        
+        return builder;
+    }
     public static WebApplicationBuilder AddDbContext(this WebApplicationBuilder builder)
     {
         string? connectionString = builder.Configuration.GetConnectionString("LocalConnectionString");

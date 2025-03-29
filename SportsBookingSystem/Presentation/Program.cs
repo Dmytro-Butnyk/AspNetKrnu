@@ -14,6 +14,7 @@ public class Program
         builder.Services.AddControllersWithViews();
 
         builder
+            .AddApplicationServices()
             .AddDbContext()
             .AddRepositories()
             .AddOptions()
